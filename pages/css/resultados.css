@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Hanken+Grotesk:wght@500;700;800&display=swap');
+/* resultados */
+*{
+  font-family: 'Hanken Grotesk';
+  box-sizing: border-box;
+  
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+  }
+    .one{
+      color:hsl(0, 100%, 67%) ;
+      background-color: hsla(0, 100%, 67%, 0.1);
+    }
+    .two{
+      color: hsl(39, 100%, 56%);
+      background-color: hsla(39, 100%, 56%, 0.1);
+    }
+    .three{
+      color: hsl(166, 100%, 37%);
+      background-color: hsla(166, 100%, 37%, 0.1);
+    }
+    .four{
+      color:hsl(234, 85%, 45%);
+      background-color: hsla(234, 85%, 45%, 0.1);
+    }
+    
+    /*the main wrapper consisting of two columns*/
+    
+    .wrapper {
+      box-shadow: 0.5em 0.5em 1em #d7e8f5;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 0px;
+    }
+    
+    /*left column of the wrapper*/
+    
+    .left-col {
+      width: 375px;
+      height: 500px;
+      color: white;
+      background-image: linear-gradient(#7e50f2,#240587) ;
+      border-radius: 1.6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      background-color: red;
+    }
+    span.hero {
+      margin-top: 2em;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .my-score {
+      margin-top: 0.7em;
+      background-image: linear-gradient(#240587,#4730ba);
+      box-shadow: 0 -2em 1em #4730ba inset;
+      padding: 1em;
+      min-width: 55%;
+      min-height:30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+    }
+    .obtained-score {
+      font-size: 3.5rem;
+    }
+    .total-score {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.65);
+    }
+    .remark {
+      margin-top: .6em;
+      font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .detailed-remark {
+      padding: 1.3em;
+      padding-bottom: 2em;
+      text-align: center;
+      line-height: 1.4em;
+      font-size: .9rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+    
+    /* Right column of the wrapper */
+    
+    .right-col {
+      width: 375px;
+      height: 500px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 20px;
+    }
+    .right-col .summary {
+      font-weight: stronger;
+      font-size: 1.2em;
+    }
+    #stats {
+      display: flex;
+      gap: .5em;
+      padding: .8em;
+      border-radius: .5em;
+      align-items: center;
+    }
+    .scorecard {
+      display: flex;
+      flex-direction: column;
+      gap: .7em;
+    }
+    .score {
+      color: #4b4d52;
+      display: inline-flex;
+      gap: .5em;
+      margin-left: auto;
+    
+    }
+    .score .out-of {
+      color: gray;
+    }
+    .continue-button {
+      width: 200px;
+      text-decoration: none;
+      text-transform: capitalize;
+      padding: 1em;
+      text-align: center;
+      color: white;
+      background-color: #2f343d;
+      border-radius: 3em;
+      
+    }
+    .boton-content{
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    .continue-button:hover{
+      cursor: pointer;
+      background:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    }
+    /* fin resultados */
