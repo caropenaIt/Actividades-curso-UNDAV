@@ -1,0 +1,2 @@
+Esta carpeta contiene el examen de la primera parte del curso de desarrollo frontend de la UNDAV (Universidad Nacional De Avellaneda).
+Se encuentra el archivo HTML del examen + archivo CSS + el contenido multimedia del mismo.
