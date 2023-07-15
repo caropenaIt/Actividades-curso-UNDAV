@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* arreglos generales */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 18px;
+  font-family:'Open Sans', sans-serif;
+}
+h2, h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+/* caja-1/header */
+.parte-1{
+  background: hsl(193, 100%, 96%)  100% / 100% url(../media/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+}
+.imagen1{
+  width: 450px;
+  height: 350px;
+}
+.logo-boton{
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-boton img{
+  width: 200px;
+  padding: 20px;
+}
+.un-button{
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px gray;
+  border: none;
+  width: 150px;
+  margin: 20px;
+}
+.un-button:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+/* boton rosa */
+.pink-button{
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  color: white;
+}
+.pink-button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* cajita header */
+.parrafo-box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.parrafo p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* caja con los row-box */
+.medio-box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 30px;
+margin-bottom: 20px;
+}
+.medio-box img{
+  width: 250px;
+  height: 200px;
+}
+.texto{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.row-box{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 50px;
+}
+.rowreverse-box{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+.row-box, .rowreverse-box{
+  box-shadow: 1px 1px 1px 1px gray;
+  border-radius: 10px;
+}
+/* caja al centro del sitio */
+.box-frente{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  box-shadow: 1px 1px 1px 1px gray;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+/* footer */
+.pie{
+  margin-top: 70px;
+  background-color: hsl(192, 100%, 9%);
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  color: white;
+}
+/* columnas */
+.columna-1{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.huddle{
+  width: 200px;
+  padding: 20px;
+}
+.location{
+  width: 25px;
+  height: 25px;
+  filter: invert(100%); 
+}
+
+.logo-texto img{
+  width: 25px;
+  height: 25px;
+}
+.columna-2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.columna-3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+} 
+
+.columna-2 p:hover, .columna-3 p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.redes{
+  filter: invert(100%);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px; 
+}
+.cada-red{
+  border: solid black 2px;
+  border-radius: 50px;
+}
+.cada-red:hover{
+  background-color: green;
+  cursor: pointer;
+}
+.last-box{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-direction: column;
+}
+/* pasado a mobile */
+@media (max-width: 375px){
+  body{
+  font-size: 15px;
+  text-align: center;
+  }
+  h2, h3{
+    font-size: 17px;
+  }
+  .parte-1{
+    background: hsl(193, 100%, 96%)  100% / 100% url(../media/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+
+  }
+  .parrafo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .parrafo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen1{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  .logo-boton{
+    gap: 10px;
+  }
+  .logo-boton img{
+    width: 200px;
+    padding: 20px;
+  }
+.medio-box{
+  flex-direction: column;
+}
+.row-box, .rowreverse-box{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+  .pie{
+    flex-direction: column;
+    justify-content: left;
+    gap: 30px;
+    text-align: left;
+  }
+  .huddle{
+    margin-top: 20px;
+  }
+  .columna-3, .columna-2{
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+  }
+  .last-box{
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .redes{
+    justify-content: center;
+  }
+}

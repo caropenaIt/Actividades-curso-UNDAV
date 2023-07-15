@@ -1,0 +1,167 @@
+/* medidas principales generales */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background: hsl(229, 57%, 11%) left 100% / 100% 50%  url("../media/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: 'Raleway', sans-serif;
+  }
+p{
+  color: hsl(243, 100%, 93%);
+}
+/* actividad en si */
+.caja-principal{
+  display: flex;
+  gap: 20px;
+}
+.caja-fylo{
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  align-items: first baseline;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px 85px 10px 10px;
+  width: 300px;
+}
+.logo{
+  margin-bottom: 10px;
+}
+.barra-caja{
+  background-color: hsl(228, 56%, 26%);
+  padding: 20px;
+  border-radius: 10px;
+} 
+.barra-caja span{
+  font-weight: bold;
+}
+.carga{
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 400px;
+  height: 15px;
+
+}
+.barrita{
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width:300px;
+  height:15px;
+  border-radius:10px;
+  background:linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  display: flex;
+  justify-content: flex-end;
+}
+
+.puntito{
+background-color: white;
+border-radius: 50%;
+width: 15px;
+height: 15px;
+
+}
+.medidas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iconos{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.iconos img{
+  background-color: hsl(229, 57%, 11%);
+  padding: 10px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+.card {
+  width: 100px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.globo {
+  width: 140px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: white;
+  position: relative;
+  top: -50px;
+  right: 150px;
+  z-index: 1;
+}
+.globo span{
+  color: hsl(229, 57%, 11%);
+}
+.globo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  background: transparent;
+  width: 0px; height: 0px;
+  border-bottom: 30px solid white;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+@media (max-width: 400px){
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: hsl(229, 57%, 11%) left 100% / 100% 50%  url("../media/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .caja-principal{
+  flex-direction: column;
+  align-items: center;
+  } 
+  .barra-caja{
+    width: 90%;
+  }
+  .carga{
+    width: 240px;
+  }
+  .barrita{
+    width: 200px;
+  }
+  /* .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  solid 3px red;
+  } */
+  .globo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    right: -10px; 
+  }
+  
+}
